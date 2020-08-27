@@ -1,3 +1,4 @@
+var defnombre= document.getElementById()
 function pedirNombre(){
 	var nombre = prompt('¿Cuál es su nombre?')
 	console.log(nombre)
