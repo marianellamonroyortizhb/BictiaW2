@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;500&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="assets/css/style.css">
+		<title>Bienvenido</title>
+	</head>
+	
+	<body>
+		<div class="flex-container">
+		<form class="PersonalDataForm" onsubmit="CheckInfo(event)">
+
+			<header>
+				<h1>Queremos conocerte</h1>
+			</header>
+
+			<div class = "PersonalDataInput">
+				<label for="InputName">¿Cuál es tu nombre?</label>
+				<input type="text" id="InputName">
+				<small id="MensajeFill"></small>
+			</div>
+
+			<div class = "PersonalDataInput">
+				<label for="InputLastname">¿Cuál es tu apellido?</label>
+				<input type="text" id="InputLastname">
+			</div>
+
+			<div class = "PersonalDataInput">
+				<label for="InputPassword">¿Qué contraseña quieres asignar?</label>
+				<input type="password" id="InputPassword">
+			</div>
+
+			<div class = "PersonalDataInput">
+				<label for="Email">¿Cómo es tu cuenta de correo?</label>
+				<input type="email" id="InputEmail">
+			</div>
+			
+			<div class = "PersonalDataInput">
+				<label for="InputPhoneNumber">¿Cómo es tu número de celular? (Opcional)</label>
+				<input type="number" id="InputPhoneNumber">
+			</div>
+
+			<div class = "PersonalDataInput">
+				<label for="Agree">¿Leíste y estás de acuerdo con los términos y condiciones?</label>
+				<input type="checkbox" id="Agree">
+			</div>
+
+			<input class = "SubmitBt" type="submit" value="Envía los datos">
+
+		</form>
+		</div>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
